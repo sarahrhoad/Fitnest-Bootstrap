@@ -1,3 +1,104 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Landing Page verbiage */
+.text-1a {
+  margin: 0;
+  font-size: 18px;
+}
+
+.text-1b {
+  margin: 0;
+  font-size: 30px;
+}
+
+/* Blue Section #1 - container used for all blue sections */
+.box-1 {
+  padding: 100px;
+  background-color: #3B8DBF;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 0px 1px 10px #1A4456;
+}
+
+.blue {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Container used for all comment bubble sections */
+.comment-bubble {
+  padding: 100px;
+  text-align: center;
+}
+
+.comment-bubble img, .comment-bubble p {
+  margin: 5px;
+  display: inline-block;
+}
+
+.comment-bubble p {
+  padding-left: 20px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  color: #4F4F4F;
+  letter-spacing: 2px;
+}
+
+/* White Section #2 with Intencity and Interval information*/
+.fitness-apps {
+  padding: 0 100px 100px 100px;
+}
+
+.app-logo {
+  padding-top: 20px;
+  text-align: right;
+}
+
+.part1 {
+  padding: 0;
+}
+
+.gray-line {
+  margin: 0 50px;
+  width: 100px;
+  height: 1px;
+  background-color: #BDBDBD;
+}
+
+.partA, .partB {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #4F4F4F;
+  letter-spacing: 1px;
+}
+
+.partC {
+  margin: 8px 0 0 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 300;
+  color: #828282;
+  letter-spacing: 1px;
+}
+
+.part2 {
+  margin: 45px 0;
+  width: 50px;
+  height: 1px;
+  background-color: #BDBDBD;
+}
+
+.no-margin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Top Banner */
 #banner {
   position: absolute;
@@ -6,15 +107,6 @@
   box-shadow: 0px 1px 10px #1A4456;
   background-color: #fff;
   z-index: 1;
-}
-
-#wrapper-landing {
-  background-image: url('../images/background.jpg');
-  height: 100vh;
-  width: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #fitnest-logo {
@@ -51,8 +143,18 @@
   color: #4F4F4F;
 }
 
-/* Landing Page with Runner Image */
+/* Landing Page with runner background */
+#wrapper-landing {
+  background-image: url('../images/background.jpg');
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #landing {
+  padding: 100px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -86,16 +188,6 @@
   letter-spacing: 2px;
 }
 
-.text-1a {
-  margin: 0;
-  font-size: 18px;
-}
-
-.text-1b {
-  margin: 0;
-  font-size: 30px;
-}
-
 #more {
   text-align: center;
 }
@@ -113,19 +205,6 @@
 }
 
 /* Blue Section #1 */
-.box-1 {
-  padding: 100px;
-  background-color: #3B8DBF;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.blue {
-  font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-}
-
 #blue-1 {
   font-size: 22px;
   font-weight: 600;
@@ -136,31 +215,17 @@
   text-align: left;
 }
 
-.comment-bubble {
-  padding: 100px;
-  text-align: center;
-}
-
-.comment-bubble img, .comment-bubble p {
-  display: inline-block;
-}
-
-.comment-bubble p {
-  padding-left: 20px;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 700;
-  color: #4F4F4F;
-  letter-spacing: 2px;
-}
-
+/* White Section #1 with list of Fitness Goals */
 #goals {
   padding: 100px;
   text-align: center;
+  display: flex;
 }
 
 #flag {
-  display: inline-block;
+  align-self: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #flag img {
@@ -168,7 +233,7 @@
 }
 
 #list-of-needs {
-  display: inline-block;
+  flex: 1;
   font-size: 30px;
   font-weight: 300;
   text-align: left;
@@ -195,11 +260,13 @@
 }
 
 #blue-line {
-  margin: 0 100px;
+  margin: 0 auto;
   height: 1px;
+  width: 75%;
   background-color: #3B8DBF;
 }
 
+/* Table showing gym and trainer prices */
 #table {
   margin: 0 auto;
   padding: 100px;
@@ -233,6 +300,14 @@ th {
   background-color: #7A008640;
 }
 
+#wrapper-flag {
+  margin: 0 auto;
+}
+
+#wrapper-flag1 {
+  display: flex;
+}
+
 #purple1 {
   background-color: #25006335;
   font-weight: 300;
@@ -259,7 +334,112 @@ th {
   font-style: italic;
 }
 
+/* Blue Section #2 */
 #but p {
   font-size: 36px;
   font-style: italic;
+}
+
+/* White Section #2 with Intencity and Interval information */
+#interval-image {
+  text-align: right;
+}
+
+#interval-image img {
+  padding: 20px 20px 0 0;
+  height: 200px;
+}
+
+#blank {
+  margin: 0 50px;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+}
+
+/* Gray Section with email and sign-up options  */
+#gray-box {
+  padding: 100px;
+  background-color: #828282;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#gray {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#gray span {
+  font-style: italic;
+}
+
+#gray-2 {
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+#email-signup {
+  text-align: center;
+}
+
+#email-address, #button {
+  padding: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+#enter-email {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 400px;
+  height: 52px;
+  border-radius: 100px / 108px;
+  text-align: center;
+  outline: 0;
+  border: 0;
+}
+
+#sign-up {
+  font-size: 14px;
+  color: #fff;
+  background-color: #77BDD9;
+  letter-spacing: 1px;
+  width: 120px;
+  height: 52px;
+  border-radius: 100px / 108px;
+  border-color: #77BDD9;
+  text-align: center;
+  box-shadow: 0px 6px 16px -9px #1A4456;
+}
+
+/* Footer Section */
+#footer {
+  padding: 100px;
+}
+
+#references {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: #828282;
+  letter-spacing: 1px;
+}
+
+#article1 a, #article2 a {
+  font-size: 12px;
+  font-weight: 300;
+  color: #828282;
+  text-decoration: none;
+}
+
+#copyright {
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #828282;
 }
