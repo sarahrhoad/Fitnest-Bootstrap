@@ -2,20 +2,25 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+th {
+  width: 28%;
+  height: 50px;
+}
+
 /* Landing Page verbiage */
 .text-1a {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.255em;
 }
 
 .text-1b {
   margin: 0;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 /* Blue Section #1 - container used for all blue sections */
 .box-1 {
-  padding: 100px;
+  padding: 6%;
   background-color: #3B8DBF;
   color: #fff;
   letter-spacing: 1px;
@@ -23,14 +28,14 @@ body {
 }
 
 .blue {
-  font-size: 26px;
+  font-size: 1.625em;
   font-weight: 600;
   text-align: center;
 }
 
 /* Container used for all comment bubble sections */
 .comment-bubble {
-  padding: 100px;
+  padding: 8%;
   text-align: center;
 }
 
@@ -46,6 +51,17 @@ body {
   font-weight: 700;
   color: #4F4F4F;
   letter-spacing: 2px;
+}
+
+/* White Section #1 with table */
+.local-gym-col, #startup-fee-row,
+#annual-fee-row, #monthly-fee-row {
+  margin: 5px;
+  font-weight: 300;
+}
+
+.local-gym-col {
+  background-color: #7A008640;
 }
 
 /* White Section #2 with Intencity and Interval information*/
@@ -154,7 +170,6 @@ body {
 }
 
 #landing {
-  padding: 100px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -167,7 +182,7 @@ body {
 
 #percentage img {
   height: 100%;
-  margin-right: 30px;
+  margin-right: 6%;
 }
 
 #wrapper-call-to-action {
@@ -176,7 +191,7 @@ body {
 }
 
 #vertical-line {
-  margin-right: 30px;
+  margin-right: 6%;
   width: 2px;
   height: 100%;
   background-color: #3B8DBF;
@@ -206,7 +221,7 @@ body {
 
 /* Blue Section #1 */
 #blue-1 {
-  font-size: 22px;
+  font-size: .85em;
   font-weight: 600;
 }
 
@@ -215,17 +230,29 @@ body {
   text-align: left;
 }
 
+#strength-training {
+  padding-bottom: 6px;
+}
+
 /* White Section #1 with list of Fitness Goals */
 #goals {
-  padding: 100px;
+  padding: 56px;
   text-align: center;
+  display: flex;
+}
+
+#flag-container {
+  margin: 0 auto;
+}
+
+#flag-wrapper {
   display: flex;
 }
 
 #flag {
   align-self: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 #flag img {
@@ -260,26 +287,21 @@ body {
 }
 
 #blue-line {
-  margin: 0 auto;
+  margin: 100px auto auto;
   height: 1px;
-  width: 75%;
+  width: 70%;
   background-color: #3B8DBF;
 }
 
 /* Table showing gym and trainer prices */
 #table {
   margin: 0 auto;
-  padding: 100px;
+  padding: 80px;
   font-size: 18px;
   letter-spacing: 1px;
   text-align: center;
   border-collapse: separate;
   border-spacing: 5px 5px;
-}
-
-th {
-  width: 28%;
-  height: 50px;
 }
 
 #gym img, #trainer img {
@@ -291,33 +313,16 @@ th {
   font-weight: 300;
 }
 
-.row-a, #row1, #row2, #row3 {
-  margin: 5px;
-  font-weight: 300;
-}
-
-.row-a {
-  background-color: #7A008640;
-}
-
-#wrapper-flag {
-  margin: 0 auto;
-}
-
-#wrapper-flag1 {
-  display: flex;
-}
-
-#purple1 {
+#trainer-col-50-purple {
   background-color: #25006335;
   font-weight: 300;
 }
 
-#purple2 {
+#local-gym-col-218-purple {
   background-color: #7A008670;
 }
 
-#purple3 {
+#trainer-col-600-purple {
   background-color: #25006375;
 }
 
@@ -442,4 +447,20 @@ th {
   font-size: 12px;
   font-weight: 300;
   color: #828282;
+}
+
+/* Media Queries for Portrait Views */
+@media only screen and (max-width: 995px) {
+  #flag-wrapper {
+    display: block;
+  }
+
+  #flag img {
+    margin-bottom: 18px;
+  }
+}
+
+/* Media Queries for Portrait Views */
+@media only screen and (max-width: 700px) {
+
 }
