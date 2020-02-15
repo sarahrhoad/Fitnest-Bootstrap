@@ -23,54 +23,56 @@
       <div id="fitnest-logo">
         <img id="fitnest" src="images/logo.svg" alt="Fitnest Logo of a kettle bell in a birds nest">
       </div>
-      <a id="start" href="#">START TODAY</a>
+      <a class="font-size-14" id="start" href="#">START TODAY</a>
     </div>
 
     <!-- Landing Page with Runner Image -->
     <div id="wrapper-landing">
-      <div class="container-fluid" id="landing">
-        <div class="row">
-          <div id="percentage" class="col-5">
-            <img src="images/80_percent.svg" alt="80 percent">
-          </div>
-          <div id="wrapper-call-to-action" class="col-7">
-            <div id="vertical-line"></div>
+      <div class="container" id="landing-page">
+        <div id="landing-container">
+          <div id="percent-statistic">
+            <div id="percentage">
+              <img src="images/80_percent.svg" alt="80 percent">
+            </div>
+            <div id="vertical-line-text-wrapper">
+              <div id="vertical-line"></div>
+            </div>
             <div id="text-1">
-              <p class="text-1a">OF AMERICANS</p>
-              <p class="text-1b">DON'T GET THE RECOMMENDED</p>
-              <p class="text-1b">AMOUNT OF EXERCISE</p>
-              <p class="text-1a">EACH WEEK</p>
+              <p class="text-1a font-size-18">OF AMERICANS</p>
+              <p class="text-1b font-size-30">DON'T GET THE RECOMMENDED</p>
+              <p class="text-1b font-size-30">AMOUNT OF EXERCISE</p>
+              <p class="text-1b font-size-18">EACH WEEK</p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Bottom of landing page with MORE and downward facing arrow -->
-      <div class="d-flex justify-content-center" id="more">
-        <div id="arrow">
-          <p>MORE</p>
-          <img src="images/arrow.svg" alt="Arrow pointing down">
-        </div>
-      </div>
     </div>
 
+    <!-- Bottom of landing page with MORE and downward facing arrow -->
+    <div class="d-flex justify-content-center" id="more">
+      <div id="arrow">
+        <p class="font-size-14">MORE</p>
+        <img src="images/arrow.svg" alt="Arrow pointing down">
+      </div>
+    </div>
+    </div>
 
     <!-- Blue Section #1 -->
-    <div class="container-fluid box-1">
-      <div class="blue">
-        <p>RECOMMENDED AMOUNT OF EXERCISE FOR AMERICAN ADULTS</p>
-        <div id="blue-1">
-          <ul>
-            <li id="strength-training">Two days of strength training that exercises all major muscle groups</li>
-            <li>A mixture of moderate aerobic exercise</li>
-          </ul>
+      <div class="container-fluid box-1">
+        <div class="blue font-size-26">
+          <p>RECOMMENDED AMOUNT OF EXERCISE FOR AMERICAN ADULTS</p>
+          <div id="blue-1">
+            <ul class="font-size-22">
+              <li id="strength-training">Two days of strength training that exercises all major muscle groups</li>
+              <li>A mixture of moderate aerobic exercise</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
     <!-- White Section #1 -->
     <div class="container comment-boxes">
-      <div class="comment-bubble">
+      <div class="comment-bubble font-size-18">
         <img src="images/comment_bubble.svg" alt="Two comment bubbles">
         <p>EXERCISING CAN BE A BURDEN, THOUGH...</p>
       </div>
@@ -83,10 +85,10 @@
           <div id="flag">
             <img src="images/flag.svg" alt="Finsih-line Flag">
           </div>
-          <div id="list-of-needs">
+          <div class="font-size-30" id="list-of-needs">
             <p>TO REACH YOUR FITNESS GOALS,</p>
             <p>YOU NEED:</p>
-            <div id="needs">
+            <div class="font-size-20" id="needs">
               <ul>
                 <li>Time</li>
                 <li>Motivation</li>
@@ -102,49 +104,52 @@
     <div id="blue-line"></div>
 
     <div class="container comment-boxes">
-      <div class="comment-bubble">
+      <div class="comment-bubble font-size-18">
         <img src="images/comment_bubble.svg" alt="Two comment bubbles">
         <p>GYMS AND FITNESS TRAINERS ARE EXPENSIVE TOO!</p>
       </div>
     </div>
 
     <!-- Table showing gym and trainer prices  -->
-    <table id="table">
-      <thead>
-        <tr id="header-row">
-          <th scope="col">
-          </th>
-          <th id="gym" scope="col">
-            <img src="images/gym.svg" alt="Small image of two buildings">
-            <p>LOCAL GYM</p>
-          </th>
-          <th id="trainer" scope="col">
-            <img src="images/trainer.svg" alt="Image of a stick figure person">
-            <p>FITNESS TRAINER</p>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th id="startup-fee-row">STARTUP FEE</th>
-          <th class="local-gym-col">$59</th>
-        </tr>
-        <tr>
-          <th id="annual-fee-row">ANNUAL FEE</th>
-          <th class="local-gym-col">$39</th>
-        </tr>
-        <tr>
-          <th id="monthly-fee-row">MONTHLY FEE</th>
-          <th class="local-gym-col">$10</th>
-          <th id="trainer-col-50-purple">$50</th>
-        </tr>
-        <tr>
-          <th id="yearly-total-row">YEARLY TOTAL</th>
-          <th id="local-gym-col-218-purple">$218</th>
-          <th id="trainer-col-600-purple">$600</th>
-        </tr>
-      </tbody>
-    </table>
+    <div id="container table-wrapper">
+      <table class="font-size-18" id="table">
+        <thead>
+          <tr id="header-row">
+            <th scope="col">
+            </th>
+            <th id="gym" scope="col">
+              <img src="images/gym.svg" alt="Small image of two buildings">
+              <p>LOCAL GYM</p>
+            </th>
+            <th id="trainer" scope="col">
+              <img src="images/trainer.svg" alt="Image of a stick figure person">
+              <p>FITNESS TRAINER</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th id="startup-fee-row">STARTUP FEE</th>
+            <th class="local-gym-col">$59</th>
+          </tr>
+          <tr>
+            <th id="annual-fee-row">ANNUAL FEE</th>
+            <th class="local-gym-col">$39</th>
+          </tr>
+          <tr>
+            <th id="monthly-fee-row">MONTHLY FEE</th>
+            <th class="local-gym-col">$10</th>
+            <th id="trainer-col-50-purple">$50</th>
+          </tr>
+          <tr>
+            <th id="yearly-total-row">YEARLY TOTAL</th>
+            <th id="local-gym-col-218-purple">$218</th>
+            <th id="trainer-col-600-purple">$600</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
 
     <div id="disclaimer">
       <p>Prices in this table are based on the Philadelphia, PA region in April of 2018.</p>

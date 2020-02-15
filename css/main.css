@@ -7,20 +7,55 @@ th {
   height: 50px;
 }
 
+/* Font Classes */
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-26 {
+  font-size: 26px;
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.font-size-36 {
+  font-size: 36px;
+}
+
 /* Landing Page verbiage */
 .text-1a {
   margin: 0;
-  font-size: 1.255em;
 }
 
 .text-1b {
   margin: 0;
-  font-size: 1.875em;
 }
 
 /* Blue Section #1 - container used for all blue sections */
 .box-1 {
-  padding: 6%;
+  padding: 100px 20px;
   background-color: #3B8DBF;
   color: #fff;
   letter-spacing: 1px;
@@ -28,14 +63,13 @@ th {
 }
 
 .blue {
-  font-size: 1.625em;
   font-weight: 600;
   text-align: center;
 }
 
 /* Container used for all comment bubble sections */
-.comment-bubble {
-  padding: 8%;
+.comment-boxes {
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -45,8 +79,6 @@ th {
 }
 
 .comment-bubble p {
-  padding-left: 20px;
-  font-size: 18px;
   font-style: italic;
   font-weight: 700;
   color: #4F4F4F;
@@ -136,7 +168,6 @@ th {
 #start {
   display: flex;
   align-items: center;
-  font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
   color: #4F4F4F;
@@ -167,40 +198,47 @@ th {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
 }
 
-#landing {
+#landing-page {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-}
-
-#percentage {
-  padding: 0;
-  text-align: right;
-}
-
-#percentage img {
-  height: 100%;
-  margin-right: 6%;
-}
-
-#wrapper-call-to-action {
-  padding: 0;
   display: flex;
 }
 
+#landing-container {
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+#percent-statistic {
+  display: flex;
+}
+
+#percentage {
+  align-self: center;
+}
+
+#percentage img {
+  align-self: center;
+  height: 100%;
+  margin-right: 30px;
+}
+
 #vertical-line {
-  margin-right: 6%;
   width: 2px;
   height: 100%;
   background-color: #3B8DBF;
 }
 
 #text-1 {
+  margin-left: 30px;
   color: #fff;
   font-weight: 500;
   letter-spacing: 2px;
+  text-align: left;
 }
 
 #more {
@@ -215,13 +253,11 @@ th {
 #arrow p {
   margin: 0;
   letter-spacing: 2px;
-  font-size: 14px;
   color: #fff;
 }
 
 /* Blue Section #1 */
 #blue-1 {
-  font-size: .85em;
   font-weight: 600;
 }
 
@@ -236,7 +272,7 @@ th {
 
 /* White Section #1 with list of Fitness Goals */
 #goals {
-  padding: 56px;
+  padding: 100px 0;
   text-align: center;
   display: flex;
 }
@@ -260,11 +296,12 @@ th {
 }
 
 #list-of-needs {
+  margin: 12px;
   flex: 1;
-  font-size: 30px;
   font-weight: 300;
   text-align: left;
   letter-spacing: 1px;
+  color: #4F4F4F;
 }
 
 #list-of-needs p {
@@ -280,7 +317,6 @@ th {
 #needs li {
   margin-left: 12px;
   padding-left: 30px;
-  font-size: 20px;
   font-weight: 300;
   background: url('../images/checkmark.svg') no-repeat left;
   background-size: 20px 20px;
@@ -296,8 +332,7 @@ th {
 /* Table showing gym and trainer prices */
 #table {
   margin: 0 auto;
-  padding: 80px;
-  font-size: 18px;
+  padding: 100px 0;
   letter-spacing: 1px;
   text-align: center;
   border-collapse: separate;
@@ -328,7 +363,7 @@ th {
 
 #disclaimer {
   margin: 0;
-  padding: 100px;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -451,6 +486,15 @@ th {
 
 /* Media Queries for Portrait Views */
 @media only screen and (max-width: 995px) {
+  #percent-statistic {
+    display: block;
+  }
+
+  #percentage{
+    margin: 0 0 20px 25px;
+    text-align: left;
+  }
+
   #flag-wrapper {
     display: block;
   }
