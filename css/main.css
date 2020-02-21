@@ -3,7 +3,7 @@ body {
 }
 
 th {
-  width: 28%;
+  width: 167px;
   height: 50px;
 }
 
@@ -86,8 +86,10 @@ th {
 }
 
 /* White Section #1 with table */
-.local-gym-col, #startup-fee-row,
-#annual-fee-row, #monthly-fee-row {
+.local-gym-col,
+#startup-fee-row,
+#annual-fee-row,
+#monthly-fee-row {
   margin: 5px;
   font-weight: 300;
 }
@@ -102,22 +104,21 @@ th {
 }
 
 .app-logo {
+  margin: 0 92px 0 22px;
   padding-top: 20px;
   text-align: right;
 }
 
-.part1 {
+.app-info {
+  margin: 0 0 0 100px;
+}
+
+.verbiage-about-application {
   padding: 0;
 }
 
-.gray-line {
-  margin: 0 50px;
-  width: 100px;
-  height: 1px;
-  background-color: #BDBDBD;
-}
-
-.partA, .partB {
+.application-information-section1,
+.application-information-section1a {
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -126,7 +127,7 @@ th {
   letter-spacing: 1px;
 }
 
-.partC {
+.application-information-section2 {
   margin: 8px 0 0 0;
   padding: 0;
   font-size: 14px;
@@ -135,7 +136,7 @@ th {
   letter-spacing: 1px;
 }
 
-.part2 {
+.small-gray-line-separator {
   margin: 45px 0;
   width: 50px;
   height: 1px;
@@ -222,9 +223,9 @@ th {
 }
 
 #percentage img {
+  margin-right: 30px;
   align-self: center;
   height: 100%;
-  margin-right: 30px;
 }
 
 #vertical-line {
@@ -377,7 +378,6 @@ th {
 
 /* Blue Section #2 */
 #but p {
-  font-size: 36px;
   font-style: italic;
 }
 
@@ -391,11 +391,27 @@ th {
   height: 200px;
 }
 
+#app-info-interval-section {
+  margin: 0 0 0 184px;
+}
+
 #blank {
   margin: 0 50px;
   width: 100px;
   height: 1px;
   background-color: #fff;
+}
+
+#middle-gray-line-container {
+  padding-bottom: 100px;
+}
+
+#gray-line {
+  margin: auto;
+  width: 100px;
+  height: 1px;
+  background-color: #BDBDBD;
+  justify-content: center;
 }
 
 /* Gray Section with email and sign-up options  */
@@ -486,12 +502,61 @@ th {
 }
 
 /* Media Queries for Portrait Views */
-@media only screen and (max-width: 995px) {
+@media only screen and (orientation: portrait) and (max-width: 1047px) {
+  .row {
+    margin: 0;
+    display: block;
+  }
+
+  .verbiage-about-application {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .app-logo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .app-info {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .no-margin {
+    margin: auto;
+    display: block;
+  }
+
+  .small-gray-line-separator {
+    display: block;
+    margin: 30px auto;
+  }
+
+  #interval-image {
+    text-align: center;
+  }
+
+  #interval-image img {
+    padding: 0;
+    height: 200px;
+  }
+
+  #app-info-interval-section {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* Media Queries for Portrait Views */
+@media only screen and (orientation: portrait) and (max-width: 995px) {
   #percent-statistic {
     display: block;
   }
 
-  #percentage{
+  #percentage {
     margin: 0 0 20px 25px;
     text-align: left;
   }
@@ -506,6 +571,117 @@ th {
 }
 
 /* Media Queries for Portrait Views */
-@media only screen and (max-width: 700px) {
+@media only screen and (orientation: portrait) and (max-width: 700px) {
+  th {
+    width: 101px;
+  }
 
-}
+  .font-size-18 {
+    font-size: 16px;
+  }
+
+  .font-size-20 {
+    font-size: 18px;
+  }
+
+  .font-size-22 {
+    font-size: 18px;
+  }
+
+  .font-size-24 {
+    font-size: 20px;
+  }
+
+  .font-size-26 {
+    font-size: 20px;
+  }
+
+  .font-size-30 {
+    font-size: 26px;
+  }
+
+  .font-size-36 {
+    font-size: 32px;
+  }
+
+  .comment-bubble img {
+    width: 28px;
+  }
+
+  .fitness-apps {
+    padding: 0px 0 100px 0;
+  }
+
+  #percentage img {
+    width: 220px;
+  }
+
+  #gym img, #trainer img {
+    height: 30px;
+  }
+
+  #table {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  #header-row p {
+    margin: 5px 13px;
+  }
+
+  /* Media Queries for Landscape Views */
+  @media only screen and (orientation: landscape) and (max-width: 700px) {
+    .font-size-18 {
+      font-size: 14px;
+    }
+
+    .font-size-30 {
+      font-size: 20px;
+    }
+
+    .font-size-14 {
+      font-size: 10px;
+    }
+
+    .font-size-22 {
+      font-size: 18px;
+    }
+
+    .font-size-26 {
+      font-size: 20px;
+    }
+
+    #percent-statistic {
+      display: flex;
+    }
+
+    #percentage {
+      margin: 0;
+      align-self: center;
+    }
+
+    #percentage img {
+      margin-right: 30px;
+      align-self: center;
+      height: 100%;
+    }
+
+    #vertical-line {
+      width: 2px;
+      height: 100%;
+      background-color: #3B8DBF;
+    }
+
+    #text-1 {
+      margin-left: 30px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-align: left;
+    }
+
+    #arrow {
+      font-size:
+    }
+
+  }
