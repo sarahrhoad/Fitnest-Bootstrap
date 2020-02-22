@@ -45,11 +45,7 @@ th {
 }
 
 /* Landing Page verbiage */
-.text-1a {
-  margin: 0;
-}
-
-.text-1b {
+.text-1a, .text-1b {
   margin: 0;
 }
 
@@ -69,7 +65,7 @@ th {
 
 /* Container used for all comment bubble sections */
 .comment-boxes {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   text-align: center;
 }
 
@@ -100,7 +96,7 @@ th {
 
 /* White Section #2 with Intencity and Interval information*/
 .fitness-apps {
-  padding: 0 100px 100px 100px;
+  padding: 100px;
 }
 
 .app-logo {
@@ -341,6 +337,10 @@ th {
   border-spacing: 5px 5px;
 }
 
+#table-wrapper {
+  padding: 100px 0;
+}
+
 #gym img, #trainer img {
   height: 45px;
 }
@@ -402,10 +402,6 @@ th {
   background-color: #fff;
 }
 
-#middle-gray-line-container {
-  padding-bottom: 100px;
-}
-
 #gray-line {
   margin: auto;
   width: 100px;
@@ -423,7 +419,6 @@ th {
 }
 
 #gray {
-  font-size: 24px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 1px;
@@ -434,7 +429,6 @@ th {
 }
 
 #gray-2 {
-  font-size: 18px;
   font-weight: 200;
   letter-spacing: 2px;
 }
@@ -450,7 +444,6 @@ th {
 }
 
 #enter-email {
-  font-size: 14px;
   font-weight: 300;
   letter-spacing: 1px;
   width: 400px;
@@ -462,7 +455,6 @@ th {
 }
 
 #sign-up {
-  font-size: 14px;
   color: #fff;
   background-color: #77BDD9;
   letter-spacing: 1px;
@@ -479,8 +471,16 @@ th {
   padding: 100px;
 }
 
+
+#footer-row {
+  display: flex;
+}
+
+#footer-left {
+  margin: 0 90px;
+}
+
 #references {
-  font-size: 14px;
   font-style: italic;
   font-weight: 600;
   color: #828282;
@@ -488,7 +488,6 @@ th {
 }
 
 #article1 a, #article2 a {
-  font-size: 12px;
   font-weight: 300;
   color: #828282;
   text-decoration: none;
@@ -496,13 +495,23 @@ th {
 
 #copyright {
   margin-top: 30px;
-  font-size: 12px;
   font-weight: 300;
   color: #828282;
 }
 
+#share {
+  font-style: italic;
+  font-weight: 600;
+  color: #828282;
+  letter-spacing: 1px;
+}
+
+#social-media img {
+  padding: 0 5px;
+}
+
 /* Media Queries for Portrait Views */
-@media only screen and (orientation: portrait) and (max-width: 1047px) {
+@media only screen and (orientation: portrait) and (max-width: 1140px) {
   .row {
     margin: 0;
     display: block;
@@ -548,6 +557,14 @@ th {
     margin: 0;
     text-align: center;
   }
+
+  #footer-left {
+    margin: 0 90px 0 30px;
+  }
+
+  #footer {
+    padding: 100px 0 0;
+  }
 }
 
 /* Media Queries for Portrait Views */
@@ -567,6 +584,30 @@ th {
 
   #flag img {
     margin-bottom: 18px;
+  }
+
+  #footer-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #footer-left {
+    margin: 0;
+  }
+
+  #footer-right {
+    padding-bottom: 80px;
+  }
+
+  #footer {
+    padding: 100px 0 0 100px;
+  }
+
+  #copyright {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    color: #828282;
   }
 }
 
@@ -588,10 +629,6 @@ th {
     font-size: 18px;
   }
 
-  .font-size-24 {
-    font-size: 20px;
-  }
-
   .font-size-26 {
     font-size: 20px;
   }
@@ -609,7 +646,7 @@ th {
   }
 
   .fitness-apps {
-    padding: 0px 0 100px 0;
+    padding: 100px 0 100px 0;
   }
 
   #percentage img {
@@ -621,7 +658,6 @@ th {
   }
 
   #table {
-    padding: 10px;
     font-size: 12px;
   }
 
@@ -629,59 +665,267 @@ th {
     margin: 5px 13px;
   }
 
-  /* Media Queries for Landscape Views */
-  @media only screen and (orientation: landscape) and (max-width: 700px) {
-    .font-size-18 {
-      font-size: 14px;
-    }
-
-    .font-size-30 {
-      font-size: 20px;
-    }
-
-    .font-size-14 {
-      font-size: 10px;
-    }
-
-    .font-size-22 {
-      font-size: 18px;
-    }
-
-    .font-size-26 {
-      font-size: 20px;
-    }
-
-    #percent-statistic {
-      display: flex;
-    }
-
-    #percentage {
-      margin: 0;
-      align-self: center;
-    }
-
-    #percentage img {
-      margin-right: 30px;
-      align-self: center;
-      height: 100%;
-    }
-
-    #vertical-line {
-      width: 2px;
-      height: 100%;
-      background-color: #3B8DBF;
-    }
-
-    #text-1 {
-      margin-left: 30px;
-      color: #fff;
-      font-weight: 500;
-      letter-spacing: 2px;
-      text-align: left;
-    }
-
-    #arrow {
-      font-size:
-    }
-
+  #gray-box {
+    padding: 100px 0;
   }
+
+  #enter-email {
+    width: 330px;
+  }
+
+  #footer-row {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #footer-left {
+    margin: 0;
+  }
+
+  #footer-right {
+    padding-bottom: 80px;
+  }
+
+  #footer {
+    padding: 100px 0 0;
+  }
+
+  #copyright {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    color: #828282;
+  }
+}
+
+/* Media Queries for Landscape Views */
+@media only screen and (orientation: landscape) and (max-width: 1024px) {
+  #footer {
+    margin: 0;
+    padding: 100px 0 0 60px;
+  }
+
+  #footer-right {
+    padding: 0 0 80px 0;
+  }
+
+  #footer-left {
+    margin: 0 100px 0 0;
+    padding: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+/* Media Queries for Landscape Views */
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+  .font-size-14 {
+    font-size: 10px;
+  }
+
+  .text-1a {
+    padding: 8px 0;
+    font-size: 12px;
+  }
+
+  .text-1b {
+    font-size: 22px;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .verbiage-about-application {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .app-logo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .app-info {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .no-margin {
+    margin: auto;
+    display: block;
+  }
+
+  .small-gray-line-separator {
+    display: block;
+    margin: 30px auto;
+  }
+
+  #percentage img {
+    width: 200px;
+  }
+
+  #interval-image {
+    text-align: center;
+  }
+
+  #interval-image img {
+    padding: 0;
+    height: 200px;
+  }
+
+  #app-info-interval-section {
+    margin: 0;
+    text-align: center;
+  }
+
+  #footer-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #footer-right {
+    padding: 0 0 80px 0;
+  }
+
+  #footer-left {
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer {
+    padding: 100px 0 0 100px;
+  }
+
+  #references p {
+    font-size: 14px;
+  }
+}
+
+/* Media Queries for Landscape Views */
+@media only screen and (orientation: landscape) and (max-width: 736px) {
+  .font-size-14 {
+    font-size: 10px;
+  }
+
+  .text-1a {
+    font-size: 12px;
+  }
+
+  .text-1b {
+    font-size: 20px;
+  }
+
+  .font-size-20 {
+    font-size: 18px;
+  }
+
+  .font-size-22 {
+    font-size: 18px;
+  }
+
+  .font-size-26 {
+    font-size: 20px;
+  }
+
+  .fitness-apps {
+    padding: 100px 0;
+  }
+
+  .row {
+    margin: 0;
+    display: block;
+  }
+
+  .verbiage-about-application {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .app-logo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .app-info {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .no-margin {
+    margin: auto;
+    display: block;
+  }
+
+  .small-gray-line-separator {
+    display: block;
+    margin: 30px auto;
+  }
+
+  #references p {
+    font-size: 14px;
+  }
+
+  #percent-statistic {
+    display: flex;
+  }
+
+  #percentage {
+    margin: 0;
+    align-self: center;
+  }
+
+  #percentage img {
+    margin-right: 30px;
+    align-self: center;
+    height: 100%;
+    width: 200px;
+  }
+
+  #vertical-line {
+    width: 2px;
+    height: 100%;
+    background-color: #3B8DBF;
+  }
+
+  #list-of-needs {
+    font-size: 22px;
+  }
+
+  #text-1 {
+    margin-left: 30px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+
+  #interval-image {
+    text-align: center;
+  }
+
+  #interval-image img {
+    padding: 0;
+    height: 200px;
+  }
+
+  #app-info-interval-section {
+    margin: 0;
+    text-align: center;
+  }
+
+  #footer {
+    padding: 100px 0 0 50px;
+  }
+
+  #footer-left {
+    margin: 0;
+  }
+}
