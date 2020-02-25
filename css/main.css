@@ -51,7 +51,8 @@ th {
 
 /* Blue Section #1 - container used for all blue sections */
 .box-1 {
-  padding: 100px 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #3B8DBF;
   color: #fff;
   letter-spacing: 1px;
@@ -65,7 +66,7 @@ th {
 
 /* Container used for all comment bubble sections */
 .comment-boxes {
-  padding: 100px 0 0 0;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -96,27 +97,29 @@ th {
 
 /* White Section #2 with Intencity and Interval information*/
 .fitness-apps {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .app-logo {
-  margin: 0 92px 0 22px;
+  margin-right: 92px;
   padding-top: 20px;
   text-align: right;
 }
 
 .app-info {
-  margin: 0 0 0 100px;
+  margin-left: 100px;
 }
 
-.verbiage-about-application {
-  padding: 0;
+.intencity-interval-app-verbiage {
+  margin-right: 0;
+  margin-left: 0;
 }
+
 
 .application-information-section1,
 .application-information-section1a {
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
   font-size: 18px;
   font-weight: 300;
   color: #4F4F4F;
@@ -124,8 +127,7 @@ th {
 }
 
 .application-information-section2 {
-  margin: 8px 0 0 0;
-  padding: 0;
+  margin-top: 8px;
   font-size: 14px;
   font-weight: 300;
   color: #828282;
@@ -133,7 +135,8 @@ th {
 }
 
 .small-gray-line-separator {
-  margin: 45px 0;
+  margin-top: 45px;
+  margin-bottom: 45px;
   width: 50px;
   height: 1px;
   background-color: #BDBDBD;
@@ -207,31 +210,32 @@ th {
 
 #landing-container {
   margin: 0 auto;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #percent-statistic {
-  display: flex;
+  justify-content: center;
+  /* display: flex; */
 }
 
-#percentage {
+/* #percentage {
   align-self: center;
-}
+} */
 
 #percentage img {
-  margin-right: 30px;
   align-self: center;
   height: 100%;
 }
 
 #vertical-line {
+  margin: 0 30px;
   width: 2px;
   height: 100%;
   background-color: #3B8DBF;
 }
 
 #text-1 {
-  margin-left: 30px;
   color: #fff;
   font-weight: 500;
   letter-spacing: 2px;
@@ -270,7 +274,8 @@ th {
 
 /* White Section #1 with list of Fitness Goals */
 #goals {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
   display: flex;
 }
@@ -330,7 +335,8 @@ th {
 /* Table showing gym and trainer prices */
 #table {
   margin: 0 auto;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
   letter-spacing: 1px;
   text-align: center;
   border-collapse: separate;
@@ -382,26 +388,6 @@ th {
 }
 
 /* White Section #2 with Intencity and Interval information */
-#interval-image {
-  text-align: right;
-}
-
-#interval-image img {
-  padding: 20px 20px 0 0;
-  height: 200px;
-}
-
-#app-info-interval-section {
-  margin: 0 0 0 184px;
-}
-
-#blank {
-  margin: 0 50px;
-  width: 100px;
-  height: 1px;
-  background-color: #fff;
-}
-
 #gray-line {
   margin: auto;
   width: 100px;
@@ -412,7 +398,8 @@ th {
 
 /* Gray Section with email and sign-up options  */
 #gray-box {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #828282;
   color: #fff;
   letter-spacing: 1px;
@@ -468,16 +455,14 @@ th {
 
 /* Footer Section */
 #footer {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-
-#footer-row {
-  display: flex;
-}
-
-#footer-left {
-  margin: 0 90px;
+#col-md-pull-6 {
+  margin-right: 90px;
+  margin-left: 90px;
+  display: inline-block;
 }
 
 #references {
@@ -499,6 +484,11 @@ th {
   color: #828282;
 }
 
+#col-md-push-6 {
+  display: inline-block;
+  vertical-align: top;
+}
+
 #share {
   font-style: italic;
   font-weight: 600;
@@ -509,9 +499,9 @@ th {
 #social-media img {
   padding: 0 5px;
 }
-
+/*
 /* Media Queries for Portrait Views */
-@media only screen and (orientation: portrait) and (max-width: 1140px) {
+/* @media only screen and (orientation: portrait) and (max-width: 1140px) {
   .row {
     margin: 0;
     display: block;
@@ -544,31 +534,17 @@ th {
     margin: 30px auto;
   }
 
-  #interval-image {
-    text-align: center;
-  }
-
-  #interval-image img {
-    padding: 0;
-    height: 200px;
-  }
-
-  #app-info-interval-section {
-    margin: 0;
-    text-align: center;
-  }
-
-  #footer-left {
+  #col-md-pull-6 {
     margin: 0 90px 0 30px;
   }
 
   #footer {
     padding: 100px 0 0;
   }
-}
+} */
 
 /* Media Queries for Portrait Views */
-@media only screen and (orientation: portrait) and (max-width: 995px) {
+/* @media only screen and (orientation: portrait) and (max-width: 995px) {
   #percent-statistic {
     display: block;
   }
@@ -591,11 +567,11 @@ th {
     flex-direction: column-reverse;
   }
 
-  #footer-left {
+  #col-md-pull-6 {
     margin: 0;
   }
 
-  #footer-right {
+  #col-md-push-6 {
     padding-bottom: 80px;
   }
 
@@ -609,7 +585,7 @@ th {
     font-weight: 300;
     color: #828282;
   }
-}
+} */
 
 /* Media Queries for Portrait Views */
 @media only screen and (orientation: portrait) and (max-width: 700px) {
@@ -617,7 +593,7 @@ th {
     width: 101px;
   }
 
-  .font-size-18 {
+  /* .font-size-18 {
     font-size: 16px;
   }
 
@@ -639,51 +615,80 @@ th {
 
   .font-size-36 {
     font-size: 32px;
-  }
+  } */
 
-  .comment-bubble img {
-    width: 28px;
-  }
-
-  .fitness-apps {
-    padding: 100px 0 100px 0;
+  #percent-statistic {
+    justify-content: left;
   }
 
   #percentage img {
+    padding-bottom: 20px;
     width: 220px;
   }
 
-  #gym img, #trainer img {
-    height: 30px;
+  #vertical-line {
+    display: none;
+  }
+
+  #flag-wrapper {
+    display: block;
+  }
+
+  #list-of-needs {
+    padding-top: 20px;
   }
 
   #table {
     font-size: 12px;
   }
 
-  #header-row p {
-    margin: 5px 13px;
+  #gym img, #trainer img {
+    height: 35px;
   }
 
-  #gray-box {
-    padding: 100px 0;
+  .verbiage-about-application {
+    margin-top: 30px;
+  }
+
+  .app-logo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .app-info {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .no-margin {
+    display: block;
+  }
+
+  .small-gray-line-separator {
+    margin: 30px auto;
+  }
+
+  #header-row p {
+    margin: 5px 13px;
   }
 
   #enter-email {
     width: 330px;
   }
-
+/*
   #footer-row {
     margin-left: 20px;
     display: flex;
     flex-direction: column-reverse;
   }
 
-  #footer-left {
+  #col-md-pull-6 {
     margin: 0;
   }
 
-  #footer-right {
+  #col-md-push-6 {
     padding-bottom: 80px;
   }
 
@@ -696,21 +701,21 @@ th {
     padding-bottom: 30px;
     font-weight: 300;
     color: #828282;
-  }
+  } */
 }
 
 /* Media Queries for Landscape Views */
-@media only screen and (orientation: landscape) and (max-width: 1024px) {
+/* @media only screen and (orientation: landscape) and (max-width: 1024px) {
   #footer {
     margin: 0;
     padding: 100px 0 0 60px;
   }
 
-  #footer-right {
+  #col-md-push-6 {
     padding: 0 0 80px 0;
   }
 
-  #footer-left {
+  #col-md-pull-6 {
     margin: 0 100px 0 0;
     padding: 0;
   }
@@ -718,10 +723,10 @@ th {
   .row {
     margin: 0;
   }
-}
+} */
 
 /* Media Queries for Landscape Views */
-@media only screen and (orientation: landscape) and (max-width: 900px) {
+/* @media only screen and (orientation: landscape) and (max-width: 900px) {
   .font-size-14 {
     font-size: 10px;
   }
@@ -766,10 +771,6 @@ th {
     margin: 30px auto;
   }
 
-  #percentage img {
-    width: 200px;
-  }
-
   #interval-image {
     text-align: center;
   }
@@ -784,16 +785,20 @@ th {
     text-align: center;
   }
 
+  #percentage img {
+    width: 200px;
+  }
+
   #footer-row {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  #footer-right {
+  #col-md-push-6 {
     padding: 0 0 80px 0;
   }
 
-  #footer-left {
+  #col-md-pull-6 {
     margin: 0;
     padding: 0;
   }
@@ -805,10 +810,10 @@ th {
   #references p {
     font-size: 14px;
   }
-}
+} */
 
 /* Media Queries for Landscape Views */
-@media only screen and (orientation: landscape) and (max-width: 736px) {
+/* @media only screen and (orientation: landscape) and (max-width: 736px) {
   .font-size-14 {
     font-size: 10px;
   }
@@ -925,7 +930,7 @@ th {
     padding: 100px 0 0 50px;
   }
 
-  #footer-left {
+  #col-md-pull-6 {
     margin: 0;
   }
-}
+} */ */
