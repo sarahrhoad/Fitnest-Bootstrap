@@ -116,7 +116,6 @@ th {
   margin-left: 0;
 }
 
-
 .application-information-section1,
 .application-information-section1a {
   margin-bottom: 0;
@@ -145,6 +144,11 @@ th {
 .no-margin {
   margin-left: 0;
   margin-right: 0;
+}
+
+/* Footer Section */
+.footer-row {
+  justify-content: center;
 }
 
 /* Top Banner */
@@ -222,7 +226,6 @@ th {
 /* #percentage {
   align-self: center;
 } */
-
 #percentage img {
   align-self: center;
   height: 100%;
@@ -455,14 +458,21 @@ th {
 
 /* Footer Section */
 #footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  justify-content: center;
 }
 
-#col-md-pull-6 {
-  margin-right: 90px;
-  margin-left: 90px;
-  display: inline-block;
+#references-left-side {
+  margin-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#social-media-right-side {
+  margin-left: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #references {
@@ -484,11 +494,6 @@ th {
   color: #828282;
 }
 
-#col-md-push-6 {
-  display: inline-block;
-  vertical-align: top;
-}
-
 #share {
   font-style: italic;
   font-weight: 600;
@@ -499,93 +504,47 @@ th {
 #social-media img {
   padding: 0 5px;
 }
-/*
+
 /* Media Queries for Portrait Views */
-/* @media only screen and (orientation: portrait) and (max-width: 1140px) {
-  .row {
-    margin: 0;
-    display: block;
+@media only screen and (orientation: portrait) and (max-width: 995px) {
+  #percent-statistic {
+    justify-content: left;
+  }
+
+  #percentage img {
+    padding-bottom: 20px;
+  }
+
+  #vertical-line {
+    display: none;
   }
 
   .verbiage-about-application {
     margin-top: 30px;
-    display: block;
+  }
+
+  .application-information-section1, .application-information-section1a {
+    display: inline;
   }
 
   .app-logo {
-    margin: 0;
+    margin-right: 90px;
     padding: 0;
-    text-align: center;
   }
 
   .app-info {
     margin: 0;
     padding: 0;
-    text-align: center;
   }
 
   .no-margin {
-    margin: auto;
     display: block;
   }
 
   .small-gray-line-separator {
-    display: block;
     margin: 30px auto;
   }
-
-  #col-md-pull-6 {
-    margin: 0 90px 0 30px;
-  }
-
-  #footer {
-    padding: 100px 0 0;
-  }
-} */
-
-/* Media Queries for Portrait Views */
-/* @media only screen and (orientation: portrait) and (max-width: 995px) {
-  #percent-statistic {
-    display: block;
-  }
-
-  #percentage {
-    margin: 0 0 20px 25px;
-    text-align: left;
-  }
-
-  #flag-wrapper {
-    display: block;
-  }
-
-  #flag img {
-    margin-bottom: 18px;
-  }
-
-  #footer-row {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #col-md-pull-6 {
-    margin: 0;
-  }
-
-  #col-md-push-6 {
-    padding-bottom: 80px;
-  }
-
-  #footer {
-    padding: 100px 0 0 100px;
-  }
-
-  #copyright {
-    margin-top: 30px;
-    padding-bottom: 30px;
-    font-weight: 300;
-    color: #828282;
-  }
-} */
+}
 
 /* Media Queries for Portrait Views */
 @media only screen and (orientation: portrait) and (max-width: 700px) {
@@ -593,29 +552,9 @@ th {
     width: 101px;
   }
 
-  /* .font-size-18 {
-    font-size: 16px;
-  }
-
-  .font-size-20 {
-    font-size: 18px;
-  }
-
-  .font-size-22 {
-    font-size: 18px;
-  }
-
-  .font-size-26 {
-    font-size: 20px;
-  }
-
   .font-size-30 {
-    font-size: 26px;
+    font-size: 28px;
   }
-
-  .font-size-36 {
-    font-size: 32px;
-  } */
 
   #percent-statistic {
     justify-content: left;
@@ -677,260 +616,53 @@ th {
   #enter-email {
     width: 330px;
   }
-/*
-  #footer-row {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #col-md-pull-6 {
-    margin: 0;
-  }
-
-  #col-md-push-6 {
-    padding-bottom: 80px;
-  }
-
-  #footer {
-    padding: 100px 0 0;
-  }
-
-  #copyright {
-    margin-top: 30px;
-    padding-bottom: 30px;
-    font-weight: 300;
-    color: #828282;
-  } */
 }
 
 /* Media Queries for Landscape Views */
-/* @media only screen and (orientation: landscape) and (max-width: 1024px) {
-  #footer {
-    margin: 0;
-    padding: 100px 0 0 60px;
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+  .font-size-18.text-1b {
+    font-size: 16px;
   }
 
-  #col-md-push-6 {
-    padding: 0 0 80px 0;
-  }
-
-  #col-md-pull-6 {
-    margin: 0 100px 0 0;
-    padding: 0;
-  }
-
-  .row {
-    margin: 0;
-  }
-} */
-
-/* Media Queries for Landscape Views */
-/* @media only screen and (orientation: landscape) and (max-width: 900px) {
-  .font-size-14 {
-    font-size: 10px;
-  }
-
-  .text-1a {
-    padding: 8px 0;
-    font-size: 12px;
-  }
-
-  .text-1b {
+  .font-size-30.text-1b {
     font-size: 22px;
   }
 
-  .row {
-    display: block;
+  .container#landing-page {
+    max-width: 620px;
   }
 
-  .verbiage-about-application {
-    margin-top: 30px;
-    display: block;
+  .application-information-section1, .application-information-section1a {
+    display: inline;
+  }
+
+  .apple-google-store-images img {
+    width: 127px;
   }
 
   .app-logo {
-    margin: 0;
+    margin-right: 50px;
     padding: 0;
-    text-align: center;
+  }
+
+  .app-logo img {
   }
 
   .app-info {
     margin: 0;
     padding: 0;
-    text-align: center;
-  }
-
-  .no-margin {
-    margin: auto;
-    display: block;
   }
 
   .small-gray-line-separator {
-    display: block;
-    margin: 30px auto;
-  }
-
-  #interval-image {
-    text-align: center;
-  }
-
-  #interval-image img {
-    padding: 0;
-    height: 200px;
-  }
-
-  #app-info-interval-section {
-    margin: 0;
-    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 45px;
   }
 
   #percentage img {
-    width: 200px;
-  }
-
-  #footer-row {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #col-md-push-6 {
-    padding: 0 0 80px 0;
-  }
-
-  #col-md-pull-6 {
-    margin: 0;
-    padding: 0;
-  }
-
-  #footer {
-    padding: 100px 0 0 100px;
-  }
-
-  #references p {
-    font-size: 14px;
-  }
-} */
-
-/* Media Queries for Landscape Views */
-/* @media only screen and (orientation: landscape) and (max-width: 736px) {
-  .font-size-14 {
-    font-size: 10px;
-  }
-
-  .text-1a {
-    font-size: 12px;
-  }
-
-  .text-1b {
-    font-size: 20px;
-  }
-
-  .font-size-20 {
-    font-size: 18px;
-  }
-
-  .font-size-22 {
-    font-size: 18px;
-  }
-
-  .font-size-26 {
-    font-size: 20px;
-  }
-
-  .fitness-apps {
-    padding: 100px 0;
-  }
-
-  .row {
-    margin: 0;
-    display: block;
-  }
-
-  .verbiage-about-application {
-    margin-top: 30px;
-    display: block;
-  }
-
-  .app-logo {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .app-info {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .no-margin {
-    margin: auto;
-    display: block;
-  }
-
-  .small-gray-line-separator {
-    display: block;
-    margin: 30px auto;
-  }
-
-  #references p {
-    font-size: 14px;
-  }
-
-  #percent-statistic {
-    display: flex;
-  }
-
-  #percentage {
-    margin: 0;
-    align-self: center;
-  }
-
-  #percentage img {
-    margin-right: 30px;
-    align-self: center;
-    height: 100%;
-    width: 200px;
+    width: 162px;
   }
 
   #vertical-line {
-    width: 2px;
-    height: 100%;
-    background-color: #3B8DBF;
+    margin: 0 20px;
   }
-
-  #list-of-needs {
-    font-size: 22px;
-  }
-
-  #text-1 {
-    margin-left: 30px;
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-align: left;
-  }
-
-  #interval-image {
-    text-align: center;
-  }
-
-  #interval-image img {
-    padding: 0;
-    height: 200px;
-  }
-
-  #app-info-interval-section {
-    margin: 0;
-    text-align: center;
-  }
-
-  #footer {
-    padding: 100px 0 0 50px;
-  }
-
-  #col-md-pull-6 {
-    margin: 0;
-  }
-} */ */
+}
