@@ -507,18 +507,6 @@ th {
 
 /* Media Queries for Portrait Views */
 @media only screen and (orientation: portrait) and (max-width: 995px) {
-  #percent-statistic {
-    justify-content: left;
-  }
-
-  #percentage img {
-    padding-bottom: 20px;
-  }
-
-  #vertical-line {
-    display: none;
-  }
-
   .verbiage-about-application {
     margin-top: 30px;
   }
@@ -544,16 +532,52 @@ th {
   .small-gray-line-separator {
     margin: 30px auto;
   }
+
+  #percent-statistic {
+    justify-content: left;
+  }
+
+  #percentage img {
+    padding-bottom: 20px;
+  }
+
+  #vertical-line {
+    display: none;
+  }
 }
 
 /* Media Queries for Portrait Views */
-@media only screen and (orientation: portrait) and (max-width: 700px) {
+@media only screen and (orientation: portrait) and (max-width: 760px) {
   th {
     width: 101px;
   }
 
   .font-size-30 {
     font-size: 28px;
+  }
+
+  .verbiage-about-application {
+    margin-top: 30px;
+  }
+
+  .app-logo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .app-info {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .no-margin {
+    display: block;
+  }
+
+  .small-gray-line-separator {
+    margin: 30px auto;
   }
 
   #percent-statistic {
@@ -585,30 +609,6 @@ th {
     height: 35px;
   }
 
-  .verbiage-about-application {
-    margin-top: 30px;
-  }
-
-  .app-logo {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .app-info {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .no-margin {
-    display: block;
-  }
-
-  .small-gray-line-separator {
-    margin: 30px auto;
-  }
-
   #header-row p {
     margin: 5px 13px;
   }
@@ -620,7 +620,7 @@ th {
 
 /* Media Queries for Landscape Views */
 @media only screen and (orientation: landscape) and (max-width: 900px) {
-  .font-size-18.text-1b {
+  .font-size-18.text-1a {
     font-size: 16px;
   }
 
