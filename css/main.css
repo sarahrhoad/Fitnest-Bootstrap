@@ -506,48 +506,7 @@ th {
 }
 
 /* Media Queries for Portrait Views */
-@media only screen and (orientation: portrait) and (max-width: 995px) {
-  .verbiage-about-application {
-    margin-top: 30px;
-  }
-
-  .application-information-section1, .application-information-section1a {
-    display: inline;
-  }
-
-  .app-logo {
-    margin-right: 90px;
-    padding: 0;
-  }
-
-  .app-info {
-    margin: 0;
-    padding: 0;
-  }
-
-  .no-margin {
-    display: block;
-  }
-
-  .small-gray-line-separator {
-    margin: 30px auto;
-  }
-
-  #percent-statistic {
-    justify-content: left;
-  }
-
-  #percentage img {
-    padding-bottom: 20px;
-  }
-
-  #vertical-line {
-    display: none;
-  }
-}
-
-/* Media Queries for Portrait Views */
-@media only screen and (orientation: portrait) and (max-width: 760px) {
+@media screen and (orientation: portrait) and (max-width: 767px) {
   th {
     width: 101px;
   }
@@ -618,8 +577,49 @@ th {
   }
 }
 
+/* Media Queries for Portrait Views */
+@media screen and (orientation: portrait) and (max-width: 995px) {
+  .verbiage-about-application {
+    margin-top: 30px;
+  }
+
+  .application-information-section1, .application-information-section1a {
+    display: inline;
+  }
+
+  .app-logo {
+    margin-right: 90px;
+    padding: 0;
+  }
+
+  .app-info {
+    margin: 0;
+    padding: 0;
+  }
+
+  .no-margin {
+    display: block;
+  }
+
+  .small-gray-line-separator {
+    margin: 30px auto;
+  }
+
+  #percent-statistic {
+    justify-content: left;
+  }
+
+  #percentage img {
+    padding-bottom: 20px;
+  }
+
+  #vertical-line {
+    display: none;
+  }
+}
+
 /* Media Queries for Landscape Views */
-@media only screen and (orientation: landscape) and (max-width: 900px) {
+@media screen and (orientation: landscape) and (max-width: 900px) {
   .font-size-18.text-1a {
     font-size: 16px;
   }
